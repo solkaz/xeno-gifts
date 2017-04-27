@@ -6,6 +6,7 @@ import Table
 
 import Item exposing (Item, items)
 import FriendshipColumn exposing (friendshipColumn)
+import Character exposing (Character(..))
 
 main =
   Html.program
@@ -72,15 +73,6 @@ config =
         , friendshipColumn (friendColumnAttrs Melia)
         ]
     }
-
-type Character
-  = Shulk
-  | Fiora
-  | Dunban
-  | Reyn
-  | Sharla
-  | Riki
-  | Melia
 
 friendColumnAttrs: Character -> (String, (Item -> Int))
 friendColumnAttrs character =
