@@ -6,7 +6,7 @@ import Table
 
 import Item exposing (Item, items)
 import FriendshipColumn exposing (friendshipColumn)
-import Character exposing (Character(..))
+import Character exposing (..)
 
 main =
   Html.program
@@ -64,23 +64,12 @@ config =
         [ Table.stringColumn "Name" .name
         , Table.stringColumn "Location" .location
         , Table.stringColumn "Item Type" .itemType
-        , friendshipColumn (friendColumnAttrs Shulk)
-        , friendshipColumn (friendColumnAttrs Fiora)
-        , friendshipColumn (friendColumnAttrs Dunban)
-        , friendshipColumn (friendColumnAttrs Reyn)
-        , friendshipColumn (friendColumnAttrs Sharla)
-        , friendshipColumn (friendColumnAttrs Riki)
-        , friendshipColumn (friendColumnAttrs Melia)
+        , friendshipColumn Shulk
+        , friendshipColumn Fiora
+        , friendshipColumn Dunban
+        , friendshipColumn Reyn
+        , friendshipColumn Sharla
+        , friendshipColumn Riki
+        , friendshipColumn Melia
         ]
     }
-
-friendColumnAttrs: Character -> (String, (Item -> Int))
-friendColumnAttrs character =
-  case character of
-    Shulk -> ("Shulk", .shulk)
-    Fiora -> ("Fiora", .fiora)
-    Dunban -> ("Dunban", .dunban)
-    Reyn -> ("Reyn", .reyn)
-    Sharla -> ("Sharla", .sharla)
-    Riki -> ("Riki", .riki)
-    Melia -> ("Melia", .melia)

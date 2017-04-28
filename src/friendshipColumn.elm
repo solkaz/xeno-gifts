@@ -2,18 +2,30 @@ module FriendshipColumn exposing (friendshipColumn)
 
 import Table
 
+import Character exposing (..)
 import Item exposing (Item)
 
-friendshipColumn : (String, (Item -> Int)) -> Table.Column Item a
+friendshipColumn : Character -> Table.Column Item a
 friendshipColumn friend =
   let
-    (name, selector) = friend
+    (name, selector) = friendColumnAttrs friend
   in
     Table.customColumn
     { name = name
     , viewData = friendshipView << selector
     , sorter = Table.decreasingOrIncreasingBy selector
     }
+
+friendColumnAttrs: Character -> (String, (Item -> Int))
+friendColumnAttrs character =
+  case character of
+    Shulk -> ("Shulk", .shulk)
+    Fiora -> ("Fiora", .fiora)
+    Dunban -> ("Dunban", .dunban)
+    Reyn -> ("Reyn", .reyn)
+    Sharla -> ("Sharla", .sharla)
+    Riki -> ("Riki", .riki)
+    Melia -> ("Melia", .melia)
 
 friendshipView : Int -> String
 friendshipView modifier =
