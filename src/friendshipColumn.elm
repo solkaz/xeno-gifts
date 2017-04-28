@@ -1,7 +1,8 @@
 module FriendshipColumn exposing (friendshipColumn)
 
 import Table
-
+import Html exposing (br, text)
+import Html.Attributes exposing (style)
 import Character exposing (..)
 import Item exposing (Item)
 
@@ -10,9 +11,9 @@ friendshipColumn friend =
   let
     (name, selector) = friendColumnAttrs friend
   in
-    Table.customColumn
+    Table.veryCustomColumn
     { name = name
-    , viewData = friendshipView << selector
+    , viewData = viewFriendship << selector
     , sorter = Table.decreasingOrIncreasingBy selector
     }
 
@@ -27,16 +28,31 @@ friendColumnAttrs character =
     Riki -> ("Riki", .riki)
     Melia -> ("Melia", .melia)
 
-friendshipView : Int -> String
-friendshipView modifier =
+modifierCellColor : Int -> String
+modifierCellColor modifier =
+  if modifier < 0 then
+    "red"
+  else
+    "green"
+
+modifierToHearts : Int -> String
+modifierToHearts modifier =
   let
     absModifier = abs modifier
   in
     if absModifier > 0 && absModifier < 15 then
-      toString modifier ++ "\n♥"
+      "♥"
     else if absModifier >= 15 && absModifier < 21 then
-      toString modifier ++ "\n♥♥"
+      "♥♥"
     else if absModifier >= 21 && absModifier < 31 then
-      toString modifier ++ "\n♥♥♥"
+      "♥♥♥"
     else
-      toString modifier ++ "\n♥♥♥♥"
+      "♥♥♥♥"
+
+viewFriendship : Int -> Table.HtmlDetails msg
+viewFriendship modifier =
+  Table.HtmlDetails [ style [("background-color", modifierCellColor modifier)] ]
+  [ text (toString modifier)
+  , br [][]
+  , text (modifierToHearts modifier)
+  ]
