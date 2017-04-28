@@ -70,15 +70,31 @@ items =
   -- Satorl Marsh Collection
 
   -- Bionis' Interior Collection
-
+  , Item "Sarsaparilla" BionisInterior Vegetable -6 2 2 -2 16 8 2
+  , Item "Blood Worm" BionisInterior Animal 4 26 -16 10 -2 -4 2
+  , Item "Tap Tap Tap" BionisInterior Strange 2 10 -2 4 -2 4 10
+  , Item "Black Liver Bean" BionisInterior Vegetable 2 12 8 8 4 -2 -2
+  , Item "Azure Mouse" BionisInterior Animal 14 6 -4 12 -6 -12 6
+  , Item "High Entia Jewel" BionisInterior Strange 4 4 6 -12 12 2 12
+  , Item "Happy Duck" BionisInterior Animal 2 -2 -2 18 2 2 2
   -- Makna Forest Collection
 
   -- Frontier Village Collection
   , Item "Spicy Nut" FrontierVillage Fruit 8 -12 -4 -6 18 6 6
+  , Item "Rainbow Bug" FrontierVillage Bug 2 2 8 -6 8 10 -14
+  , Item "Rumble Box" FrontierVillage Strange 4 4 4 -2 -2 4 16
+  , Item "Crimson Citrus" FrontierVillage Fruit 2 4 -10 -14 10 10 12
+  , Item "Empress Beetle" FrontierVillage Bug 4 -4 12 10 -10 8 6
+  , Item "Black Panel" FrontierVillage Strange 18 4 10 2 4 -12 6
   -- Eryth Sea Collection
 
   -- Alcamoth Collection
-
+  , Item "Cool Lemon" Alcamoth Fruit -6 -2 -6 -6 12 14 8
+  , Item "Mystic Dahlia" Alcamoth Flower -4 4 -2 -2 4 -2 18
+  , Item "Ha Ha Ha" Alcamoth Strange 4 16 -2 10 4 4 2
+  , Item "Heart Peach" Alcamoth Fruit -2 2 4 2 12 10 4
+  , Item "Stardrop" Alcamoth Flower -8 6 12 -8 2 -2 14
+  , Item "Thunder Atmos" Alcamoth Strange 2 6 6 10 12 10 2
   -- High Entia Tomb Collection
 
   -- Valak Mountain Collection

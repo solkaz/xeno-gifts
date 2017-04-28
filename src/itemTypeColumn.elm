@@ -9,5 +9,5 @@ itemTypeColumn =
   Table.customColumn
   { name = "Item Type"
   , viewData = itemTypeToString << .itemType
-  , sorter = Table.decreasingOrIncreasingBy (.itemType >> itemTypeToString)
+  , sorter = Table.increasingOrDecreasingBy (.itemType >> itemTypeToString)
   }
