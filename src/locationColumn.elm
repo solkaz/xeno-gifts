@@ -9,5 +9,5 @@ locationColumn =
   Table.customColumn
   { name = "Location"
   , viewData = locationToString << .location
-  , sorter = Table.decreasingOrIncreasingBy (.location >> locationSortingRank )
+  , sorter = Table.increasingOrDecreasingBy (.location >> locationSortingRank )
   }

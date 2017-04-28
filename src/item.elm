@@ -41,6 +41,13 @@ items =
   -- Bionis' Leg Collection
 
   -- Colony 6 Collection
+  , Item "Cute Orchid" Colony6 Flower 4 12 -8 -2 2 4 10
+  , Item "Pyro Lizard" Colony6 Animal 8 12 -10 8 2 -12 8
+  , Item "Verdant Eternity" Colony6 Strange 6 -8 4 10 4 12 4
+  , Item "Sirius Anemone" Colony6 Flower 18 8 2 -4 4 -10 14
+  , Item "Amblygon Turtle" Colony6 Animal 2 4 -2 12 6 -12 6
+  , Item "White Night Rod" Colony6 Strange 6 -2 4 16 6 4 2
+  , Item "Spirit Clematis" Colony6 Flower -8 6 12 -8 2 -2 16
   , Item "Dobercorgi" Colony6 Animal 10 6 -4 10 -2 -16 22
   -- Ether Mine Collection
 
