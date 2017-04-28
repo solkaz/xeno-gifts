@@ -6,6 +6,7 @@ import Table
 
 import Item exposing (Item, items)
 import FriendshipColumn exposing (friendshipColumn)
+import ItemTypeColumn exposing (itemTypeColumn)
 import LocationColumn exposing (locationColumn)
 import Character exposing (..)
 
@@ -64,7 +65,7 @@ config =
     , columns =
         [ Table.stringColumn "Name" .name
         , locationColumn
-        , Table.stringColumn "Item Type" .itemType
+        , itemTypeColumn
         , friendshipColumn Shulk
         , friendshipColumn Fiora
         , friendshipColumn Dunban
