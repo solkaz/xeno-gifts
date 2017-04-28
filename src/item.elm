@@ -1,4 +1,4 @@
-module Item exposing ( Item, items)
+module Item exposing ( Item, items )
 
 type alias Item =
   { name: String
