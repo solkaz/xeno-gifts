@@ -37,7 +37,23 @@ items =
   , Item "Chewy Radish" Colony9 Vegetable -2 16 -4 2 4 10 4
   , Item "Sorrow Beetle" Colony9 Bug 4 -4 14 2 -4 14 4
   -- Tephra Cave Collection
-
+  , Item "Clear Almond" TephraCave Fruit 6 -2 -4 -12 6 6 14
+  , Item "Insanity Mint" TephraCave Flower 2 -8 -2 4 2 4 12
+  , Item "Shin Newt" TephraCave Animal 4 6 2 18 -10 -10 4
+  , Item "Brown Butterfly" TephraCave Bug 8 2 6 6 -12 16 -8
+  , Item "Kneecap Rock" TephraCave Nature 2 2 12 6 16 -4 -2
+  , Item "Leaf Mystery" TephraCave Strange 4 -2 4 6 -4 10 10
+  , Item "Bright Fig" TephraCave Fruit 2 -2 -2 10 18 10 2
+  , Item "Night Tulip" TephraCave Flower 2 4 6 -10 10 -8 10
+  , Item "Cave Rat" TephraCave Animal 2 14 -10 4 2 -6 8
+  , Item "Gold Caterpillar" TephraCave Bug -4 2 8 4 -4 10 2
+  , Item "Confusion Ivy" TephraCave Nature 6 -6 10 4 8 -2 -6
+  , Item "Steel Silk" TephraCave Strange 4 4 8 4 4 2 18
+  , Item "Dark Grape" TephraCave Fruit 4 4 -14 -14 12 6 14
+  , Item "Shin Gecko" TephraCave Animal 8 6 -2 2 2 -4 6
+  , Item "Rumble Stonefly" TephraCave Bug 16 -2 10 -6 2 2 -2
+  , Item "Clarity Moss" TephraCave Nature 2 6 4 10 -2 -2 -4
+  , Item "Happy Rabbit" TephraCave Animal -6 18 -10 10 6 -6 6
   -- Bionis' Leg Collection
 
   -- Colony 6 Collection
