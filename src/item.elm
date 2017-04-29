@@ -101,7 +101,28 @@ items =
   , Item "Mystery Firefly" EtherMine Bug 16 2 8 2 -10 2 2
   , Item "Rumble Coal" EtherMine Nature 2 2 6 4 12 -6 -4
   -- Satorl Marsh Collection
-
+  , Item "Blue Turnip" SatoriMarsh Vegetable 4 12 2 2 -2 10 4
+  , Item "Sunflower Rogue" SatoriMarsh Flower -2 2 2 4 6 -2 10
+  , Item "Chimera Rabbit" SatoriMarsh Animal -6 -2 -2 10 2 2 20
+  , Item "Mist Tree" SatoriMarsh Nature 2 2 8 -4 14 2 -10
+  , Item "Blue Gear Shard" SatoriMarsh Part 6 -6 18 2 -6 -2 4
+  , Item "Pauper's Cup" SatoriMarsh Strange 24 4 4 6 -2 -8 6
+  , Item "Cute Parsnip" SatoriMarsh Vegetable -6 20 -16 4 2 8 -2
+  , Item "Merry Coronoation" SatoriMarsh Flower -4 4 -2 -2 8 4 4
+  , Item "Venom Platypus" SatoriMarsh Animal -4 6 2 10 -2 -10 18
+  , Item "Lemon Stone" SatoriMarsh Nature -4 -6 14 4 12 -2 -6
+  , Item "Rumble Part" SatoriMarsh Part 8 -4 6 6 2 4 -6
+  , Item "Happy Carnival" SatoriMarsh Strange 12 6 6 6 2 12 2
+  , Item "Poisonous Gourd" SatoriMarsh Vegetable 2 10 2 -2 2 4 2
+  , Item "Ether Rose" SatoriMarsh Flower -8 6 12 6 2 -2 2
+  , Item "Humming Cat" SatoriMarsh Animal -8 12 4 12 2 -6 2
+  , Item "Feather Leaf" SatoriMarsh Nature -2 -6 10 4 6 4 10
+  , Item "Dawn Dice" SatoriMarsh Strange 4 18 -8 4 6 4 2
+  , Item "Humming Cabbage" SatoriMarsh Vegetable -8 4 2 20 2 12 -10
+  , Item "Orb Daisy" SatoriMarsh Flower 16 8 4 -2 4 -18 12
+  , Item "Water Log" SatoriMarsh Nature 2 8 16 -2 4 -6 -6
+  , Item "Forget-You-Not" SatoriMarsh Flower 10 10 2 2 -10 2 18
+  , Item "Wool Rock" SatoriMarsh Nature -6 2 14 2 6 -6 8
   -- Bionis' Interior Collection
   , Item "Sarsaparilla" BionisInterior Vegetable -6 2 2 -2 16 8 2
   , Item "Blood Worm" BionisInterior Animal 4 26 -16 10 -2 -4 2
