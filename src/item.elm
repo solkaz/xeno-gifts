@@ -55,7 +55,28 @@ items =
   , Item "Clarity Moss" TephraCave Nature 2 6 4 10 -2 -2 -4
   , Item "Happy Rabbit" TephraCave Animal -6 18 -10 10 6 -6 6
   -- Bionis' Leg Collection
-
+  , Item "Hot Taro" BionisLeg Vegetable -10 10 6 -2 2 8 2
+  , Item "Sour Gooseberry" BionisLeg Fruit 2 -18 -2 -4 24 16 4
+  , Item "White Ladybird" BionisLeg Bug 2 6 8 4 -2 10 -12
+  , Item "Mat Ice" BionisLeg Nature -4 -6 14 8 12 2 -6
+  , Item "Rusty Bolt" BionisLeg Part 10 -6 2 6 4 -2 8
+  , Item "Gold Dust Illusion" BionisLeg Strange -2 4 4 -6 16 4 6
+  , Item "Juicy Broccoli" BionisLeg Vegetable -12 14 2 6 2 8 -2
+  , Item "Red Durian" BionisLeg Fruit -2 6 -4 -2 10 12 6
+  , Item "Hill Firefly" BionisLeg Bug 2 2 10 2 -6 8 -8
+  , Item "Bluesky Bark" BionisLeg Nature 4 -2 10 4 4 -2 8
+  , Item "Winding Gear" BionisLeg Part 24 -8 6 4 4 -12 2
+  , Item "Devious Gravity" BionisLeg Strange 4 -2 10 12 4 -4 4
+  , Item "Spicy Cabbage" BionisLeg Vegetable -4 10 -2 24 4 8 -16
+  , Item "Walnut Grape" BionisLeg Fruit 8 -2 -4 -12 10 2 12
+  , Item "Moth Crawler" BionisLeg Bug -6 -2 2 6 -6 30 -10
+  , Item "Pione Stone" BionisLeg Nature 2 -6 12 -2 8 -2 2
+  , Item "White Songbird" BionisLeg Strange 4 4 4 10 6 10 -8
+  , Item "Hard Lotus" BionisLeg Vegetable -6 -6 2 4 16 14 -6
+  , Item "Humming Plum" BionisLeg Fruit 2 -2 2 -6 2 12 6
+  , Item "Queen Locust" BionisLeg Bug 2 6 2 -4 2 12 -4
+  , Item "Death Bangle" BionisLeg Strange -10 6 18 6 12 4 6
+  , Item "Fire Tarantula" BionisLeg Bug 2 14 6 -6 -4 8 10
   -- Colony 6 Collection
   , Item "Cute Orchid" Colony6 Flower 4 12 -8 -2 2 4 10
   , Item "Pyro Lizard" Colony6 Animal 8 12 -10 8 2 -12 8
