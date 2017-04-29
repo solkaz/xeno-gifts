@@ -162,7 +162,23 @@ items =
   , Item "Empress Beetle" FrontierVillage Bug 4 -4 12 10 -10 8 6
   , Item "Black Panel" FrontierVillage Strange 18 4 10 2 4 -12 6
   -- Eryth Sea Collection
-
+  , Item "Pink Asparagus" ErythSea Vegetable -8 -6 2 6 14 14 -4
+  , Item "Sea Berry" ErythSea Flower -10 6 12 4 2 -2 6
+  , Item "Sea Frog" ErythSea Animal 2 6 -2 20 -4 -6 6
+  , Item "White Tail" ErythSea Nature -4 2 6 10 8 -2 2
+  , Item "High Violet" ErythSea Strange 4 -2 4 4 6 6 8
+  , Item "Tropical Radish" ErythSea Vegetable -6 14 -4 4 2 2 2
+  , Item "Despair Clover" ErythSea Flower -2 8 12 2 4 -6 12
+  , Item "Mane Cat" ErythSea Animal -8 14 10 4 -2 -2 4
+  , Item "Marine Marble" ErythSea Nature 10 8 12 2 4 -2 -2
+  , Item "Steel Hauyne" ErythSea Strange 18 6 4 -4 2 -4 12
+  , Item "Dolphin Carrot" ErythSea Vegetable 6 8 2 4 -6 2 -4
+  , Item "Doomsday Poppy" ErythSea Flower 2 6 2 -18 10 -2 16
+  , Item "Oil Branch" ErythSea Nature 2 2 10 4 -4 -2 2
+  , Item "Gold Burdock" ErythSea Vegetable -18 12 6 6 10 10 -6
+  , Item "Night Lily" ErythSea Flower -2 6 4 2 -4 8 18
+  , Item "Dilemna Rock" ErythSea Nature 2 2 4 12 6 14 -12
+  , Item "Razor Teasel" ErythSea Flower 2 2 -2 -2 2 10 4
   -- Alcamoth Collection
   , Item "Cool Lemon" Alcamoth Fruit -6 -2 -6 -6 12 14 8
   , Item "Mystic Dahlia" Alcamoth Flower -4 4 -2 -2 4 -2 18
