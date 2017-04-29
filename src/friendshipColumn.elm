@@ -17,6 +17,8 @@ friendshipColumn friend =
     , sorter = Table.decreasingOrIncreasingBy selector
     }
 
+-- Given a Character type, get the character's String name and
+-- their selector function
 friendColumnAttrs: Character -> (String, (Item -> Int))
 friendColumnAttrs character =
   case character of

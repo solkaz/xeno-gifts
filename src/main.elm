@@ -7,6 +7,7 @@ import Table
 
 import Item exposing (Item, items)
 import FriendshipColumn exposing (friendshipColumn)
+import ItemNameColumn exposing (itemNameColumn)
 import ItemTypeColumn exposing (itemTypeColumn)
 import LocationColumn exposing (locationColumn)
 import Character exposing (..)
@@ -78,7 +79,7 @@ config =
     { toId = .name
     , toMsg = SetTableState
     , columns =
-        [ Table.stringColumn "Name" .name
+        [ itemNameColumn
         , locationColumn
         , itemTypeColumn
         , friendshipColumn Shulk
