@@ -232,4 +232,11 @@ items =
   -- Prison Island Collection
 
   -- Other Collection
+  , Item "Minute Mantis" Other Bug -10 -2 12 2 -8 22 -6
+  , Item "Golden Cog" Other Part 4 2 6 -2 -2 -4 14
+  , Item "Coin of Fortune" Other Strange -2 4 4 2 6 4 12
+  , Item "Love Beetle" Other Bug 2 2 10 -12 2 10 4
+  , Item "Angel Engine Y" Other Part 2 -6 18 6 2 -2 2
+  , Item "Love Source" Other Strange 100 100 100 100 100 100 100
+  , Item "Thunder Compass" Other Part 18 -4 6 2 8 -12 6
   ]
