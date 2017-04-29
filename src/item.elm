@@ -132,7 +132,28 @@ items =
   , Item "High Entia Jewel" BionisInterior Strange 4 4 6 -12 12 2 12
   , Item "Happy Duck" BionisInterior Animal 2 -2 -2 18 2 2 2
   -- Makna Forest Collection
-
+  , Item "Schorl Mushroom" MaknaForest Vegetable 2 10 2 18 -4 8 -12
+  , Item "Dark Mango" MaknaForest Fruit 8 -2 2 -6 8 -4 6
+  , Item "Enigma Lotus" MaknaForest Flower 2 10 -8 -2 2 4 10
+  , Item "Ash Fox" MaknaForest Animal 2 4 -4 8 6 -6 2
+  , Item "Scarlet Ladybird" MaknaForest Bug 2 6 2 4 2 10 -12
+  , Item "Lemonade Sky" MaknaForest Strange 2 4 16 6 -2 6 2
+  , Item "Kelp Mushroom" MaknaForest Vegetable -4 10 -10 6 4 16 -6
+  , Item "Pure Cherry" MaknaForest Fruit 2 -2 -2 -2 12 8 6
+  , Item "Humming Nettle" MaknaForest Flower 4 6 4 2 2 -6 6
+  , Item "Soft Sea Cucumber" MaknaForest Animal 2 6 -16 10 2 24 4
+  , Item "Shield Bug" MaknaForest Bug 22 -2 8 6 -12 2 -4
+  , Item "Forest of Gossip" MaknaForest Strange 4 -4 4 4 4 16 -2
+  , Item "Honey Rhubarb" MaknaForest Vegetable -12 12 2 4 2 14 -4
+  , Item "Bitter Kiwi" MaknaForest Fruit 8 -6 -4 -6 10 10 12
+  , Item "Princess Daffodil" MaknaForest Flower 8 6 -2 -12 2 -2 10
+  , Item "Fossil Monkey" MaknaForest Animal 4 18 -10 12 -6 -6 10
+  , Item "Hades Beetle" MaknaForest Bug 2 2 12 4 -2 12 -10
+  , Item "Gravel Disk" MaknaForest Strange 8 2 8 14 14 8 -2
+  , Item "Juicy Grape" MaknaForest Fruit 2 -2 -2 2 10 8 4
+  , Item "Black Iris" MaknaForest Flower -6 14 6 -2 2 -2 8
+  , Item "Venomous Lizard" MaknaForest Animal 2 12 -2 -2 -2 -4 14
+  , Item "Benign Cricket" MaknaForest Bug -4 -6 6 10 2 14 -4
   -- Frontier Village Collection
   , Item "Spicy Nut" FrontierVillage Fruit 8 -12 -4 -6 18 6 6
   , Item "Rainbow Bug" FrontierVillage Bug 2 2 8 -6 8 10 -14
