@@ -195,7 +195,28 @@ items =
   , Item "Macro Passion" HighEntiaTomb Strange 4 10 -2 6 4 10 2
   , Item "Spiral Lamp" HighEntiaTomb Part 6 -6 12 2 2 2 2
   -- Valak Mountain Collection
-
+  , Item "Sour Radish" ValakMountain Vegetable -4 10 2 2 2 8 -2
+  , Item "Ether Plum" ValakMountain Fruit 2 10 -20 -4 6 8 10
+  , Item "Fortune Mallow" ValakMountain Flower 2 10 -8 -2 2 4 10
+  , Item "Wet Rat" ValakMountain Animal -4 2 8 10 2 -6 6
+  , Item "Gypsum Branch" ValakMountain Nature 10 -6 16 4 2 2 -4
+  , Item "Frost Glass" ValakMountain Strange 6 2 6 6 2 14 10
+  , Item "Ice Cabbage" ValakMountain Vegetable -4 16 -6 6 -2 16 -2
+  , Item "Fire Apple" ValakMountain Fruit 4 -12 -2 -2 22 8 2
+  , Item "Black Peony" ValakMountain Flower 2 8 4 -2 2 -2 4
+  , Item "Ice Monkey" ValakMountain Animal 4 6 -2 4 2 2 6
+  , Item "Black Ash" ValakMountain Nature 22 2 14 6 14 -10 -14
+  , Item "Large Handcuffs" ValakMountain Strange 4 -2 4 10 4 10 -2
+  , Item "Girl Courgette" ValakMountain Vegetable -4 14 -6 18 2 8 -12
+  , Item "Ruby Mangosteen" ValakMountain Fruit 2 4 -10 -14 12 8 12
+  , Item "Fatal Belladonna" ValakMountain Flower 2 18 -2 -2 4 -8 8
+  , Item "Crystal Frog" ValakMountain Animal -4 8 -4 14 12 -2 -4
+  , Item "Emerald Snow" ValakMountain Nature 4 -6 10 4 14 6 -14
+  , Item "Amethyst Vanilla" ValakMountain Vegetable -6 8 2 -8 2 10 8
+  , Item "Sour Grape" ValakMountain Fruit 10 -2 -4 -10 10 2 12
+  , Item "Mud Squirrel" ValakMountain Animal 16 6 -6 14 -12 -16 8
+  , Item "Rabbit Stone" ValakMountain Nature 10 4 4 2 6 -8 -6
+  , Item "Broom Icicle" ValakMountain Nature 8 6 10 -2 2 -2 -8
   -- Sword Valley Collection
 
   -- Galahad Fortress Collection
