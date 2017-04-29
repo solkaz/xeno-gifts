@@ -236,7 +236,13 @@ items =
   , Item "Amethyst Melon" SwordValley Fruit 4 2 -2 -16 12 10 20
   , Item "Delerium Foxglove" SwordValley Flower 4 20 2 2 4 -6 8
   -- Galahad Fortress Collection
-
+  , Item "Wheel Lurker" GalahadFortress Bug 2 -6 8 10 -14 16 -2
+  , Item "Locust Spring" GalahadFortress Part 10 -12 6 2 -2 12 2
+  , Item "Hunger Crash" GalahadFortress Strange 2 -4 2 22 2 2 -4
+  , Item "Ultramarine Ant" GalahadFortress Bug 8 -6 8 10 -12 10 -4
+  , Item "Art Core Coil" GalahadFortress Part 18 -4 8 2 -8 2 12
+  , Item "Splish Splash" GalahadFortress Strange 4 4 -2 19 6 4 2
+  , Item "Tail Antenna" GalahadFortress Part 10 8 6 2 -2 -10 6
   -- Fallen Arm Collection
 
   -- Mechonis Field Collection
