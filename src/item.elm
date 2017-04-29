@@ -87,7 +87,19 @@ items =
   , Item "Spirit Clematis" Colony6 Flower -8 6 12 -8 2 -2 16
   , Item "Dobercorgi" Colony6 Animal 10 6 -4 10 -2 -16 22
   -- Ether Mine Collection
-
+  , Item "Light Bat" EtherMine Animal 4 8 -4 14 -6 -8 6
+  , Item "Black Beetle" EtherMine Bug 2 2 12 6 -8 8 -8
+  , Item "Charcoal Leg" EtherMine Nature 2 2 6 4 8 6 -6
+  , Item "Black Chip" EtherMine Part 14 -12 12 8 2 -8 10
+  , Item "Love Crane" EtherMine Strange -2 16 -2 4 10 4 2
+  , Item "Black Frog" EtherMine Animal 2 6 2 16 -10 -10 8
+  , Item "Rubber Mantis" EtherMine Bug -8 -2 16 4 -6 24 -4
+  , Item "Ether Pebble" EtherMine Nature 2 6 10 6 6 2 -12
+  , Item "Ready Coil" EtherMine Part 10 2 2 2 -2 6 2
+  , Item "Fire Abron" EtherMine Strange -6 10 12 2 4 6 4
+  , Item "Yellow Cat" EtherMine Animal 2 2 -2 20 8 -4 6
+  , Item "Mystery Firefly" EtherMine Bug 16 2 8 2 -10 2 2
+  , Item "Rumble Coal" EtherMine Nature 2 2 6 4 12 -6 -4
   -- Satorl Marsh Collection
 
   -- Bionis' Interior Collection
@@ -135,5 +147,4 @@ items =
   -- Prison Island Collection
 
   -- Other Collection
-
   ]
