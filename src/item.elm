@@ -244,7 +244,23 @@ items =
   , Item "Splish Splash" GalahadFortress Strange 4 4 -2 19 6 4 2
   , Item "Tail Antenna" GalahadFortress Part 10 8 6 2 -2 -10 6
   -- Fallen Arm Collection
-
+  , Item "Sour Turnip" FallenArm Vegetable 2 4 2 4 2 8 -2
+  , Item "White Plum" FallenArm Fruit 2 -2 2 -4 8 6 6
+  , Item "Oil Oyster" FallenArm Animal 4 6 -6 6 -4 -4 6
+  , Item "Poisonous Coral" FallenArm Nature 4 -4 16 2 8 2 4
+  , Item "Warning Lamp" FallenArm Part 4 -10 4 8 6 -2 6
+  , Item "Star Cute" FallenArm Strange 4 12 -2 4 2 10 2
+  , Item "Golden Beetroot" FallenArm Vegetable -6 14 -6 4 -6 16 2
+  , Item "Ice Kiwi Fruit" FallenArm Fruit 2 -8 -4 -6 2 20 8
+  , Item "Dark Fish" FallenArm Animal 2 6 2 12 2 -4 2
+  , Item "Poison Ivy" FallenArm Nature 2 2 4 -2 8 10 2
+  , Item "Digital Filament" FallenArm Part 24 -6 6 -6 2 -14 12
+  , Item "Summer Star" FallenArm Strange 2 4 -2 -4 4 10 4
+  , Item "Spicy Papaya" FallenArm Fruit -4 -2 2 2 10 8 2
+  , Item "Ether Penguin" FallenArm Animal -2 8 12 12 -6 -2 2
+  , Item "Amber Leaf" FallenArm Nature -6 6 6 -2 12 -2 -4
+  , Item "Large Mango" FallenArm Fruit 6 -2 2 -6 12 -4 6
+  , Item "Rainbow Slug" FallenArm Animal 24 8 -2 12 4 -18 8
   -- Mechonis Field Collection
   , Item "Snow Transistor" MechonisField Part 10 -6 6 8 2 4 -4
   -- Central Factory Collection
