@@ -187,7 +187,13 @@ items =
   , Item "Stardrop" Alcamoth Flower -8 6 12 -8 2 -2 14
   , Item "Thunder Atmos" Alcamoth Strange 2 6 6 10 12 10 2
   -- High Entia Tomb Collection
-
+  , Item "Green Earwig" HighEntiaTomb Bug 8 -6 8 4 -4 10 -6
+  , Item "White Tube" HighEntiaTomb Part 8 -6 8 -4 8 2 4
+  , Item "Tasty Sausage" HighEntiaTomb Strange -2 10 -6 2 10 4 -2
+  , Item "Blue Ladybird" HighEntiaTomb Bug 2 -2 6 2 -8 8 10
+  , Item "Green Diode" HighEntiaTomb Part 10 -10 6 2 -6 4 12
+  , Item "Macro Passion" HighEntiaTomb Strange 4 10 -2 6 4 10 2
+  , Item "Spiral Lamp" HighEntiaTomb Part 6 -6 12 2 2 2 2
   -- Valak Mountain Collection
 
   -- Sword Valley Collection
