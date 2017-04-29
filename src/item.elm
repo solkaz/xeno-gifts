@@ -280,11 +280,57 @@ items =
   , Item "Snow Transistor" MechonisField Part 10 -6 6 8 2 4 -4
   , Item "Sweet Pepper" MechonisField Vegetable -10 14 -10 4 10 6 -4
   -- Central Factory Collection
+  , Item "Meaty Potato" CentralFactory Vegetable -6 10 22 24 2 8 -16
+  , Item "Prism Centipede" CentralFactory Animal -4 4 -4 4 6 -4 20
+  , Item "Dew Beetle" CentralFactory Bug 8 -6 12 4 -6 4 -4
+  , Item "White Styrene" CentralFactory Nature -4 2 10 10 6 2 2
+  , Item "Angel Engine X" CentralFactory Part 10 -4 8 -2 12 2 4
+  , Item "Smoke Cylinder" CentralFactory Strange 6 6 4 -14 10 4 14
+  , Item "Blue Root" CentralFactory Vegetable -8 12 -10 4 2 14 -4
+  , Item "Cable Mouse" CentralFactory Animal 16 8 -10 14 4 -2 6
+  , Item "Glider Cockroach" CentralFactory Bug -4 -2 2 6 2 22 -6
+  , Item "Black Styrene" CentralFactory Nature 2 -2 10 4 10 6 -8
   , Item "Leaf Coil" CentralFactory Part 10 -12 6 2 2 8 2
+  , Item "Sacred Panther" CentralFactory Strange 6 6 12 8 2 2 12
+  , Item "Oil Fox" CentralFactory Animal 2 18 -2 10 -2 -12 6
+  , Item "Blood Oil" CentralFactory Nature 4 6 4 12 -2 -2 -6
+  , Item "Warrior Screw" CentralFactory Part 12 -6 2 6 2 -2 6
+  , Item "Parts Noble" CentralFactory Strange 6 4 4 2 10 6 2
   -- Agniratha Collection
-
+  , Item "Juicy Blueberry" Agniratha Fruit 8 -2 -4 8 4 8 2
+  , Item "Lewisia Silver" Agniratha Flower 4 2 -4 10 4 -2 4
+  , Item "Electric Cricket" Agniratha Bug 2 6 8 -8 -6 10 4
+  , Item "Missing Tree" Agniratha Nature 10 4 6 8 2 14 -6
+  , Item "Fancy Bolt" Agniratha Part 10 2 -2 2 -2 4 8
+  , Item "Eryth Blue" Agniratha Strange 10 6 4 4 -8 4 10
+  , Item "Sweet Lime" Agniratha Fruit 2 4 -8 -2 12 2 6
+  , Item "Freesia Cyst" Agniratha Flower 4 8 2 -6 2 6 12
+  , Item "Scissor Bug" Agniratha Bug 2 2 8 10 -10 10 -12
+  , Item "Fortune Feather" Agniratha Nature -10 2 12 4 10 -2 6
+  , Item "Blue Light Amp" Agniratha Part 16 -6 6 -12 4 2 6
+  , Item "Dramatic Night" Agniratha Strange 18 4 10 4 4 -12 4
+  , Item "Spicy Banana" Agniratha Fruit 4 -2 2 -6 4 6 6
+  , Item "Bellflower Crystal" Agniratha Flower 8 2 -2 6 -2 -2 8
+  , Item "Fairy Tale Diode" Agniratha Part 10 12 -6 2 -2 -2 4
+  , Item "Grape Spring" Agniratha Part 24 -4 6 -6 2 -14 10
   -- Prison Island Collection
-
+  , Item "Dry Lemon" PrisonIsland Fruit -2 -2 -4 -4 6 14 6
+  , Item "Dancing Squirrel" PrisonIsland Animal 2 2 -4 10 2 6 2
+  , Item "Señorita Scarab" PrisonIsland Bug 8 -6 10 4 -6 4 -2
+  , Item "Absurd Branch" PrisonIsland Nature 4 -12 14 4 6 4 -6
+  , Item "White Cover" PrisonIsland Part 12 8 2 6 -2 -4 2
+  , Item "Blue Glow" PrisonIsland Strange 2 4 16 6 -2 4 2
+  , Item "Death Lychee" PrisonIsland Fruit 2 4 -14 2 10 8 2
+  , Item "Lightning Weasel" PrisonIsland Animal 6 18 -10 12 -6 -6 6
+  , Item "Emperor Beetle" PrisonIsland Bug -8 6 14 2 -10 8 -2
+  , Item "Insanity Moss" PrisonIsland Nature -4 2 10 10 4 -2 -4
+  , Item "Modern Resistor" PrisonIsland Part 10 -6 6 -18 6 4 12
+  , Item "Blue Blood" PrisonIsland Strange 18 10 -2 6 4 -6 4
+  , Item "Hell Raspberry" PrisonIsland Fruit -4 -12 -4 -6 30 6 6
+  , Item "Angry Monkey" PrisonIsland Animal -14 6 10 10 4 -4 2
+  , Item "Green Cam" PrisonIsland Part 12 -12 6 2 -2 10 2
+  , Item "Deadly Kiwi" PrisonIsland Fruit 4 -2 4 -2 4 4 6
+  , Item "Strong Screw" PrisonIsland Part 16 8 -2 2 -6 -6 6
   -- Other Collection
   , Item "Minute Mantis" Other Bug -10 -2 12 2 -8 22 -6
   , Item "Golden Cog" Other Part 4 2 6 -2 -2 -4 14
