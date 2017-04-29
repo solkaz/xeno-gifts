@@ -262,7 +262,23 @@ items =
   , Item "Large Mango" FallenArm Fruit 6 -2 2 -6 12 -4 6
   , Item "Rainbow Slug" FallenArm Animal 24 8 -2 12 4 -18 8
   -- Mechonis Field Collection
+  , Item "Juicy Steakplant" MechonisField Vegetable -8 10 2 4 8 2 -2
+  , Item "Azure Hollyhock" MechonisField Flower 22 4 -2 -2 -4 -12 10
+  , Item "Scarlet Crawler" MechonisField Bug -4 6 4 4 -8 8 8
+  , Item "Ivy Nest" MechonisField Nature -4 -4 10 2 6 6 8
+  , Item "Retro Diode" MechonisField Part 8 2 2 2 -6 -2 14
+  , Item "Tweet Tweet" MechonisField Strange -2 16 -2 4 10 4 4
+  , Item "Acerola Pea" MechonisField Vegetable 2 8 2 -2 -4 8 2
+  , Item "Utopia Crocus" MechonisField Flower -2 12 -6 2 6 4 6
+  , Item "Shiny Scarab" MechonisField Bug 2 18 2 -2 -6 10 -4
+  , Item "Mossy Panel" MechonisField Nature 2 -6 10 4 10 4 -16
+  , Item "Modern Blue Gear" MechonisField Part 16 -4 8 -10 4 2 4
+  , Item "Flame Frame" MechonisField Strange 6 -2 4 6 2 14 -4
+  , Item "Energy Aubergine" MechonisField Vegetable 10 10 10 28 -2 18 -12
+  , Item "Water Boatman" MechonisField Bug 18 2 8 12 -14 4 -2
+  , Item "Bronze Wood" MechonisField Nature 8 6 10 -2 2 2 -6
   , Item "Snow Transistor" MechonisField Part 10 -6 6 8 2 4 -4
+  , Item "Sweet Pepper" MechonisField Vegetable -10 14 -10 4 10 6 -4
   -- Central Factory Collection
   , Item "Leaf Coil" CentralFactory Part 10 -12 6 2 2 8 2
   -- Agniratha Collection
