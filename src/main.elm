@@ -1,7 +1,8 @@
 module Main exposing (..)
 
-import Html exposing (Html, div, h1, text)
+import Html exposing (Html, div, h1, input, text)
 import Html.Attributes exposing (placeholder)
+import Html.Events exposing (onInput)
 import Table
 
 import Item exposing (Item, items)
@@ -23,6 +24,7 @@ main =
 type alias Model =
   { items : List Item
   , tableState : Table.State
+  , query : String
   }
 
 init : List Item -> ( Model, Cmd Msg )
@@ -31,6 +33,7 @@ init itemList =
     model =
       { items = items
       , tableState = Table.initialSort "Location"
+      , query = ""
       }
   in
     ( model, Cmd.none )
@@ -39,6 +42,7 @@ init itemList =
 
 type Msg
   = SetTableState Table.State
+  | SetQuery String
 
 update: Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
@@ -47,15 +51,26 @@ update msg model =
       ( { model | tableState = newState }
       , Cmd.none
       )
+    SetQuery newQuery ->
+      ( { model | query = newQuery }
+      , Cmd.none
+      )
 
 -- VIEW
 
 view : Model -> Html Msg
-view { items, tableState } =
-  div []
-    [ h1 [] [ text "Xeno-Gifts" ]
-    , Table.view config tableState items
-    ]
+view { items, tableState, query } =
+  let
+    lowerQuery =
+      String.toLower query
+    matchedItems =
+      List.filter (String.contains lowerQuery << String.toLower << .name) items
+  in
+    div []
+      [ h1 [] [ text "Xeno-Gifts" ]
+      , input [ placeholder "Item name", onInput SetQuery ] []
+      , Table.view config tableState matchedItems
+      ]
 
 config : Table.Config Item Msg
 config =
