@@ -218,7 +218,23 @@ items =
   , Item "Rabbit Stone" ValakMountain Nature 10 4 4 2 6 -8 -6
   , Item "Broom Icicle" ValakMountain Nature 8 6 10 -2 2 -2 -8
   -- Sword Valley Collection
-
+  , Item "Fire Pepper" SwordValley Vegetable -6 -2 2 12 18 6 -8
+  , Item "Bitter Melon" SwordValley Fruit 10 -8 -4 -6 10 8 4
+  , Item "Jujube Silver" SwordValley Flower -4 6 -2 -10 14 -2 10
+  , Item "Gold Condenser" SwordValley Part -6 -8 18 2 6 -2 6
+  , Item "Red Frontier" SwordValley Strange 6 6 2 12 6 8 6
+  , Item "Meaty Carrot" SwordValley Vegetable -12 12 -2 18 8 8 -10
+  , Item "Citron Gooseberry" SwordValley Fruit 2 -2 -4 -6 12 8 6
+  , Item "Black Blossom" SwordValley Flower 16 4 6 -2 2 -18 10
+  , Item "Purple Lamp" SwordValley Part 10 -6 6 -6 -6 -2 18
+  , Item "Darkness Bottle" SwordValley Strange 2 4 10 4 -2 -2 10
+  , Item "Bitter Broccoli" SwordValley Vegetable 6 10 2 4 -4 2 -2
+  , Item "Juicy Melon" SwordValley Fruit 4 -8 -2 8 10 14 2
+  , Item "Abyss Heather" SwordValley Flower -8 6 12 -8 2 -2 14
+  , Item "Crimson Gear" SwordValley Part 10 2 2 -10 8 2 6
+  , Item "Bud of Eternity" SwordValley Strange 6 -2 4 -6 10 10 6
+  , Item "Amethyst Melon" SwordValley Fruit 4 2 -2 -16 12 10 20
+  , Item "Delerium Foxglove" SwordValley Flower 4 20 2 2 4 -6 8
   -- Galahad Fortress Collection
 
   -- Fallen Arm Collection
