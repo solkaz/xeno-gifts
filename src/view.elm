@@ -3,13 +3,8 @@ module View exposing (..)
 import Html exposing (Html, div, h1, input, text)
 import Html.Attributes exposing (placeholder)
 import Html.Events exposing (onInput)
-import Table
 import Item exposing (Item, items)
-import FriendshipColumn exposing (friendshipColumn)
-import ItemNameColumn exposing (itemNameColumn)
-import ItemTypeColumn exposing (itemTypeColumn)
-import LocationColumn exposing (locationColumn)
-import Character exposing (..)
+import ItemTable
 import Model exposing (Model)
 import Msg exposing (Msg)
 
@@ -17,9 +12,11 @@ import Msg exposing (Msg)
 view : Model -> Html Msg
 view { items, tableState, query } =
     let
+        lowerQuery : String
         lowerQuery =
             String.toLower query
 
+        matchedItems : List Item
         matchedItems =
             if String.isEmpty lowerQuery then
                 items
@@ -29,25 +26,5 @@ view { items, tableState, query } =
         div []
             [ h1 [] [ text "Xeno-Gifts" ]
             , input [ placeholder "Item name", onInput Msg.SetQuery ] []
-            , Table.view config tableState matchedItems
+            , ItemTable.view tableState matchedItems
             ]
-
-
-config : Table.Config Item Msg
-config =
-    Table.config
-        { toId = .name
-        , toMsg = Msg.SetTableState
-        , columns =
-            [ itemNameColumn
-            , locationColumn
-            , itemTypeColumn
-            , friendshipColumn Shulk
-            , friendshipColumn Fiora
-            , friendshipColumn Dunban
-            , friendshipColumn Reyn
-            , friendshipColumn Sharla
-            , friendshipColumn Riki
-            , friendshipColumn Melia
-            ]
-        }
