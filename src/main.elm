@@ -10,68 +10,23 @@ import ItemNameColumn exposing (itemNameColumn)
 import ItemTypeColumn exposing (itemTypeColumn)
 import LocationColumn exposing (locationColumn)
 import Character exposing (..)
+import Model exposing (Model)
 
 
 main =
     Html.program
-        { init = init items
-        , update = update
+        { init = Model.init
+        , update = Model.update
         , view = view
         , subscriptions = \_ -> Sub.none
         }
 
 
 
--- MODEL
-
-
-type alias Model =
-    { items : List Item
-    , tableState : Table.State
-    , query : String
-    }
-
-
-init : List Item -> ( Model, Cmd Msg )
-init itemList =
-    let
-        model =
-            { items = items
-            , tableState = Table.initialSort "Location"
-            , query = ""
-            }
-    in
-        ( model, Cmd.none )
-
-
-
--- UPDATE
-
-
-type Msg
-    = SetTableState Table.State
-    | SetQuery String
-
-
-update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
-    case msg of
-        SetTableState newState ->
-            ( { model | tableState = newState }
-            , Cmd.none
-            )
-
-        SetQuery newQuery ->
-            ( { model | query = newQuery }
-            , Cmd.none
-            )
-
-
-
 -- VIEW
 
 
-view : Model -> Html Msg
+view : Model -> Html Model.Msg
 view { items, tableState, query } =
     let
         lowerQuery =
@@ -85,16 +40,16 @@ view { items, tableState, query } =
     in
         div []
             [ h1 [] [ text "Xeno-Gifts" ]
-            , input [ placeholder "Item name", onInput SetQuery ] []
+            , input [ placeholder "Item name", onInput Model.SetQuery ] []
             , Table.view config tableState matchedItems
             ]
 
 
-config : Table.Config Item Msg
+config : Table.Config Item Model.Msg
 config =
     Table.config
         { toId = .name
-        , toMsg = SetTableState
+        , toMsg = Model.SetTableState
         , columns =
             [ itemNameColumn
             , locationColumn
