@@ -62,7 +62,7 @@ locationToString location =
             "Alcamoth"
 
         HighEntiaTomb ->
-            "High  Entia Tomb"
+            "High Entia Tomb"
 
         ValakMountain ->
             "Valak Mountain"
