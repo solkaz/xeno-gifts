@@ -11,6 +11,7 @@ import ItemTypeColumn exposing (itemTypeColumn)
 import LocationColumn exposing (locationColumn)
 import Character exposing (..)
 import Model exposing (Model)
+import Msg exposing (Msg)
 
 
 main =
@@ -26,7 +27,7 @@ main =
 -- VIEW
 
 
-view : Model -> Html Model.Msg
+view : Model -> Html Msg
 view { items, tableState, query } =
     let
         lowerQuery =
@@ -40,16 +41,16 @@ view { items, tableState, query } =
     in
         div []
             [ h1 [] [ text "Xeno-Gifts" ]
-            , input [ placeholder "Item name", onInput Model.SetQuery ] []
+            , input [ placeholder "Item name", onInput Msg.SetQuery ] []
             , Table.view config tableState matchedItems
             ]
 
 
-config : Table.Config Item Model.Msg
+config : Table.Config Item Msg
 config =
     Table.config
         { toId = .name
-        , toMsg = Model.SetTableState
+        , toMsg = Msg.SetTableState
         , columns =
             [ itemNameColumn
             , locationColumn

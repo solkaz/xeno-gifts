@@ -1,12 +1,8 @@
 module Model exposing (..)
 
+import Msg exposing (Msg)
 import Table
 import Item exposing (Item, items)
-
-
-type Msg
-    = SetTableState Table.State
-    | SetQuery String
 
 
 type alias Model =
@@ -32,12 +28,12 @@ init =
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        SetTableState newState ->
+        Msg.SetTableState newState ->
             ( { model | tableState = newState }
             , Cmd.none
             )
 
-        SetQuery newQuery ->
+        Msg.SetQuery newQuery ->
             ( { model | query = newQuery }
             , Cmd.none
             )
