@@ -11,7 +11,7 @@ type alias Model =
     { items : List Item
     , tableState : Table.State
     , query : String
-    , bannedLocations : LocationSet
+    , displayedLocations : LocationSet
     }
 
 
@@ -20,7 +20,7 @@ initModel =
     { items = Item.all
     , tableState = Table.initialSort "Location"
     , query = ""
-    , bannedLocations = LocationSet.init
+    , displayedLocations = LocationSet.init
     }
 
 
@@ -43,9 +43,15 @@ update msg model =
             )
 
         Msg.ToggleLocation location ->
-            ( { model | bannedLocations = LocationSet.toggle location model.bannedLocations }
+            ( { model | displayedLocations = LocationSet.toggle location model.displayedLocations }
             , Cmd.none
             )
+
+        Msg.DisableAllLocations ->
+            ( { model | displayedLocations = LocationSet.empty }, Cmd.none )
+
+        Msg.EnableAllLocations ->
+            ( { model | displayedLocations = LocationSet.full }, Cmd.none )
 
 
 subscriptions : a -> Sub Msg

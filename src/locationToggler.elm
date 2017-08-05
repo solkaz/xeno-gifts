@@ -19,7 +19,7 @@ view locationSet =
 
                     attrs =
                         [ (type_ "checkbox")
-                        , (checked (not <| LocationSet.member loc locationSet))
+                        , (checked (LocationSet.member loc locationSet))
                         , (name locName)
                         , (onClick (Msg.ToggleLocation loc))
                         ]

@@ -8,3 +8,5 @@ type Msg
     = SetTableState Table.State
     | SetQuery String
     | ToggleLocation Location
+    | DisableAllLocations
+    | EnableAllLocations

@@ -10,7 +10,7 @@ type alias LocationSet =
 
 init : LocationSet
 init =
-    Set.empty
+    full
 
 
 member : Location -> LocationSet -> Bool
@@ -34,3 +34,15 @@ toggle location locationSet =
         remove location locationSet
     else
         insert location locationSet
+
+
+empty : LocationSet
+empty =
+    Set.empty
+
+
+full : LocationSet
+full =
+    Location.all
+        |> List.map Location.toString
+        |> Set.fromList
