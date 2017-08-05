@@ -1,4 +1,4 @@
-module Item exposing (Item, items)
+module Item exposing (Item, all)
 
 import ItemType exposing (..)
 import Location exposing (..)
@@ -18,8 +18,8 @@ type alias Item =
     }
 
 
-items : List Item
-items =
+all : List Item
+all =
     -- Colony 9 Collection
     [ Item "Sweet Wasabi" Colony9 Vegetable -1 8 -1 6 2 14 -4
     , Item "Dance Apple" Colony9 Fruit -2 -2 2 -2 10 10 2
