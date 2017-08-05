@@ -25,8 +25,34 @@ type Location
     | Other
 
 
-locationToString : Location -> String
-locationToString location =
+all : List Location
+all =
+    [ Colony9
+    , TephraCave
+    , Colony6
+    , BionisLeg
+    , EtherMine
+    , SatoriMarsh
+    , BionisInterior
+    , MaknaForest
+    , FrontierVillage
+    , ErythSea
+    , Alcamoth
+    , HighEntiaTomb
+    , ValakMountain
+    , SwordValley
+    , GalahadFortress
+    , FallenArm
+    , MechonisField
+    , CentralFactory
+    , Agniratha
+    , PrisonIsland
+    , Other
+    ]
+
+
+toString : Location -> String
+toString location =
     case location of
         Colony9 ->
             "Colony 9"
@@ -92,8 +118,8 @@ locationToString location =
             "Other"
 
 
-locationSortingRank : Location -> Int
-locationSortingRank location =
+sortingRank : Location -> Int
+sortingRank location =
     case location of
         Colony9 ->
             1
