@@ -1,6 +1,6 @@
 module View exposing (..)
 
-import Html exposing (Html, div, h1, input, text, button)
+import Html exposing (Html, div, h1, input, text, button, br)
 import Html.Attributes exposing (placeholder)
 import Html.Events exposing (onClick, onInput)
 import Item exposing (Item)
@@ -34,9 +34,10 @@ view { items, tableState, query, displayedLocations } =
     in
         div []
             [ h1 [] [ text "Xeno-Gifts" ]
-            , button [ onClick Msg.EnableAllLocations ] [ text "Enable All" ]
-            , button [ onClick Msg.DisableAllLocations ] [ text "Disable All" ]
             , input [ placeholder "Item name", onInput Msg.SetQuery ] []
+            , br [] []
+            , button [ onClick Msg.DisableAllLocations ] [ text "Disable All" ]
+            , button [ onClick Msg.EnableAllLocations ] [ text "Enable All" ]
             , LocationToggler.view displayedLocations
             , ItemTable.view tableState matchedItems
             ]
