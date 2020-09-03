@@ -1,14 +1,14 @@
 module ItemTable exposing (view)
 
-import Html exposing (Html)
-import Table
-import Item exposing (Item)
-import Msg exposing (Msg)
+import Character exposing (..)
 import FriendshipColumn exposing (friendshipColumn)
+import Html exposing (Html)
+import Item exposing (Item)
 import ItemNameColumn exposing (itemNameColumn)
 import ItemTypeColumn exposing (itemTypeColumn)
 import LocationColumn exposing (locationColumn)
-import Character exposing (..)
+import Msg exposing (Msg)
+import Table
 
 
 view : Table.State -> List Item -> Html Msg

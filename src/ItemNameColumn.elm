@@ -1,10 +1,10 @@
 module ItemNameColumn exposing (itemNameColumn)
 
-import Table
 import Html exposing (a, text)
 import Html.Attributes exposing (href)
 import Item exposing (Item)
 import String exposing (append, map)
+import Table
 
 
 makeWikiLink : String -> String
@@ -13,11 +13,12 @@ makeWikiLink name =
         (\c ->
             if c == ' ' then
                 '_'
+
             else
                 c
         )
         name
-        |> append "http://www.xenoblade.wikia.com/"
+        |> append "https://xenoblade.wikia.com/"
 
 
 itemNameColumn : Table.Column Item a

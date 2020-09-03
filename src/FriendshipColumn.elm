@@ -1,10 +1,10 @@
 module FriendshipColumn exposing (friendshipColumn)
 
-import Table
+import Character exposing (..)
 import Html exposing (br, text)
 import Html.Attributes exposing (style)
-import Character exposing (..)
 import Item exposing (Item)
+import Table
 
 
 friendshipColumn : Character -> Table.Column Item a
@@ -13,11 +13,11 @@ friendshipColumn friend =
         ( name, selector ) =
             friendColumnAttrs friend
     in
-        Table.veryCustomColumn
-            { name = name
-            , viewData = viewFriendship << selector
-            , sorter = Table.decreasingOrIncreasingBy selector
-            }
+    Table.veryCustomColumn
+        { name = name
+        , viewData = viewFriendship << selector
+        , sorter = Table.decreasingOrIncreasingBy selector
+        }
 
 
 
@@ -54,6 +54,7 @@ modifierCellColor : Int -> String
 modifierCellColor modifier =
     if modifier < 0 then
         "red"
+
     else
         "green"
 
@@ -64,20 +65,23 @@ modifierToHearts modifier =
         absModifier =
             abs modifier
     in
-        if absModifier > 0 && absModifier < 15 then
-            "♥"
-        else if absModifier >= 15 && absModifier < 21 then
-            "♥♥"
-        else if absModifier >= 21 && absModifier < 31 then
-            "♥♥♥"
-        else
-            "♥♥♥♥"
+    if absModifier > 0 && absModifier < 15 then
+        "♥"
+
+    else if absModifier >= 15 && absModifier < 21 then
+        "♥♥"
+
+    else if absModifier >= 21 && absModifier < 31 then
+        "♥♥♥"
+
+    else
+        "♥♥♥♥"
 
 
 viewFriendship : Int -> Table.HtmlDetails msg
 viewFriendship modifier =
-    Table.HtmlDetails [ style [ ( "background-color", modifierCellColor modifier ) ] ]
-        [ text (toString modifier)
+    Table.HtmlDetails [ style "background-color" (modifierCellColor modifier) ]
+        [ text (String.fromInt modifier)
         , br [] []
         , text (modifierToHearts modifier)
         ]

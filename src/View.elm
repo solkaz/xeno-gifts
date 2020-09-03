@@ -3,7 +3,7 @@ module View exposing (..)
 import Html exposing (Html, div, h1, input, text)
 import Html.Attributes exposing (placeholder)
 import Html.Events exposing (onInput)
-import Item exposing (Item, items)
+import Item exposing (Item)
 import ItemTable
 import Model exposing (Model)
 import Msg exposing (Msg)
@@ -20,11 +20,12 @@ view { items, tableState, query } =
         matchedItems =
             if String.isEmpty lowerQuery then
                 items
+
             else
                 List.filter (String.contains lowerQuery << String.toLower << .name) items
     in
-        div []
-            [ h1 [] [ text "Xeno-Gifts" ]
-            , input [ placeholder "Item name", onInput Msg.SetQuery ] []
-            , ItemTable.view tableState matchedItems
-            ]
+    div []
+        [ h1 [] [ text "Xeno-Gifts" ]
+        , input [ placeholder "Item name", onInput Msg.SetQuery ] []
+        , ItemTable.view tableState matchedItems
+        ]

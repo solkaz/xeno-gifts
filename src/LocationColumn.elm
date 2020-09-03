@@ -1,8 +1,8 @@
 module LocationColumn exposing (..)
 
-import Table
 import Item exposing (Item)
 import Location exposing (..)
+import Table
 
 
 locationColumn : Table.Column Item a

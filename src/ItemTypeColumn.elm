@@ -1,8 +1,8 @@
 module ItemTypeColumn exposing (itemTypeColumn)
 
-import Table
 import Item exposing (Item)
 import ItemType exposing (..)
+import Table
 
 
 itemTypeColumn : Table.Column Item a

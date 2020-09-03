@@ -1,8 +1,8 @@
 module Model exposing (..)
 
+import Item exposing (Item, items)
 import Msg exposing (Msg)
 import Table
-import Item exposing (Item, items)
 
 
 type alias Model =
@@ -20,8 +20,8 @@ initModel =
     }
 
 
-init : ( Model, Cmd Msg )
-init =
+init : () -> ( Model, Cmd Msg )
+init _ =
     ( initModel, Cmd.none )
 
 
