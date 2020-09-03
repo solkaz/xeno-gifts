@@ -5151,7 +5151,7 @@ var $elm$core$Task$perform = F2(
 		return $elm$core$Task$command(
 			A2($elm$core$Task$map, toMessage, task));
 	});
-var $elm$browser$Browser$element = _Browser_element;
+var $elm$browser$Browser$document = _Browser_document;
 var $NoRedInk$elm_sortable_table$Table$State = F2(
 	function (a, b) {
 		return {$: 0, a: a, b: b};
@@ -6320,30 +6320,36 @@ var $author$project$View$view = function (_v0) {
 				return $.aL;
 			}),
 		items);
-	return A2(
-		$elm$html$Html$div,
-		_List_Nil,
-		_List_fromArray(
+	return {
+		ax: _List_fromArray(
 			[
 				A2(
-				$elm$html$Html$h1,
+				$elm$html$Html$div,
 				_List_Nil,
 				_List_fromArray(
 					[
-						$elm$html$Html$text('Xeno-Gifts')
-					])),
-				A2(
-				$elm$html$Html$input,
-				_List_fromArray(
-					[
-						$elm$html$Html$Attributes$placeholder('Item name'),
-						$elm$html$Html$Events$onInput($author$project$Msg$SetQuery)
-					]),
-				_List_Nil),
-				A2($author$project$ItemTable$view, tableState, matchedItems)
-			]));
+						A2(
+						$elm$html$Html$h1,
+						_List_Nil,
+						_List_fromArray(
+							[
+								$elm$html$Html$text('Xeno-Gifts')
+							])),
+						A2(
+						$elm$html$Html$input,
+						_List_fromArray(
+							[
+								$elm$html$Html$Attributes$placeholder('Item name'),
+								$elm$html$Html$Events$onInput($author$project$Msg$SetQuery)
+							]),
+						_List_Nil),
+						A2($author$project$ItemTable$view, tableState, matchedItems)
+					]))
+			]),
+		aW: 'Xenogifts'
+	};
 };
-var $author$project$Main$main = $elm$browser$Browser$element(
+var $author$project$Main$main = $elm$browser$Browser$document(
 	{aH: $author$project$Model$init, aV: $author$project$Model$subscriptions, aZ: $author$project$Model$update, a_: $author$project$View$view});
 _Platform_export({'Main':{'init':$author$project$Main$main(
 	$elm$json$Json$Decode$succeed(0))(0)}});}(this));
